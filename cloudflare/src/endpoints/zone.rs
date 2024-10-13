@@ -148,6 +148,8 @@ pub struct Zone {
     pub name: String,
     /// Information about the account the zone belongs to
     pub account: AccountDetails,
+    /// The last time proof of ownership was detected and the zone was made active
+    pub activated_on: DateTime<Utc>,
     /// A list of beta features in which the zone is participating
     pub betas: Option<Vec<String>>,
     /// When the zone was created
